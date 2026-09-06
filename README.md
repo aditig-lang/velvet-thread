@@ -1,2 +1,3 @@
 # velvet-thread
-A project based on virtual wardrobe.
+A virtual wardrobe.
+A practice project exploring the concept of a digital virtual wardrobe using modern web development.
