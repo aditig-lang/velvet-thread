@@ -35,5 +35,30 @@ Node.js (v16 or higher)
 
 npm
 
+Installation
+Clone the repository:
+
+Bash
+git clone [https://github.com/aditig-lang/velvet-thread.git](https://github.com/aditig-lang/velvet-thread.git)
+cd velvet-thread
+Install dependencies:
+
+Bash
+npm install
+Configure Environment Variables:
+Create or edit the .env file in the root directory:
+
+Code snippet
+PORT=5000
+Run the Application:
+
+Bash
+node server.js
+
+
+
 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you'd like to contribute.
+
+👤 Author
+Aditi Gupta — @aditig-lang
