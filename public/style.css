@@ -1,0 +1,240 @@
+/* Custom CSS for Velvet Thread Stylist Platform */
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceDot {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-6px); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* =========================================================
+   GLASSMORPHISM
+   ========================================================= */
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #e1bfb5;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ab3500;
+}
+
+/* =========================================================
+   ONBOARDING / PROFILE SELECTIONS
+   ========================================================= */
+
+.active-selection {
+    border-color: #ab3500 !important;
+    background-color: rgba(255, 107, 53, 0.1) !important;
+    color: #ab3500 !important;
+}
+
+.active-selection span {
+    color: #ab3500 !important;
+}
+
+/* =========================================================
+   RATING BUTTONS
+   ========================================================= */
+
+.active-rating {
+    background-color: #ab3500 !important;
+    border-color: #ab3500 !important;
+    color: #ffffff !important;
+}
+
+/* =========================================================
+   CHAT BUBBLES
+   ========================================================= */
+
+.message-bubble {
+    word-break: break-word;
+    white-space: pre-wrap;
+    max-width: 88%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    line-height: 1.6;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #ab3500;
+    color: #ffffff;
+    border-radius: 1rem 1rem 0 1rem;
+    padding: 0.75rem 1rem;
+}
+
+.bot-message {
+    align-self: flex-start;
+    border-radius: 1rem 1rem 1rem 0;
+    padding: 0.75rem 1rem;
+}
+
+/* Markdown-rendered content in bot messages */
+.bot-message strong {
+    font-weight: 700;
+    color: #ab3500;
+}
+
+.bot-message em {
+    font-style: italic;
+    color: #555;
+}
+
+/* =========================================================
+   HIDE SCROLLBAR UTILITY
+   ========================================================= */
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* =========================================================
+   SPA VIEW TRANSITIONS
+   ========================================================= */
+
+.spa-view {
+    transition: opacity 0.3s ease;
+}
+
+/* =========================================================
+   CARD HOVER ZOOM
+   ========================================================= */
+
+.card-hover-zoom img {
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.card-hover-zoom:hover img {
+    transform: scale(1.03);
+}
+
+/* =========================================================
+   WARDROBE & TREND FILTER BUTTONS
+   ========================================================= */
+
+.wardrobe-filter-btn,
+.trend-filter-btn {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.wardrobe-filter-btn.active-filter,
+.trend-filter-btn.active-filter {
+    background-color: #ab3500;
+    color: #ffffff;
+    border-color: #ab3500;
+}
+
+/* =========================================================
+   TREND & WARDROBE CARDS — Hover Lift Effect
+   ========================================================= */
+
+.trend-card,
+.wardrobe-card {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.3s ease;
+}
+
+.trend-card:hover {
+    transform: translateY(-4px);
+}
+
+.wardrobe-card:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   MODALS
+   ========================================================= */
+
+#wardrobe-modal .animate-fade-in,
+#trend-modal .animate-fade-in {
+    animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* =========================================================
+   CHATBOT TYPING INDICATOR
+   ========================================================= */
+
+#typing-indicator span {
+    display: inline-block;
+    animation: bounceDot 1.2s ease-in-out infinite;
+}
+
+#typing-indicator span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+#typing-indicator span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* =========================================================
+   SCALE UTILITY (Tailwind doesn't have scale-102 by default)
+   ========================================================= */
+
+.group-hover\:scale-102:hover img,
+.scale-102 {
+    transform: scale(1.02);
+}
+
+/* =========================================================
+   LOGO HOVER PULSE
+   ========================================================= */
+
+.logo-pulse:hover {
+    opacity: 0.9;
+}
