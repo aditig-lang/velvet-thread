@@ -16,6 +16,7 @@ A practice project exploring the concept of a digital virtual wardrobe using mod
 
 ```text
 velvet-thread/
+├── public 
 ├── .env                # Environment variables (API keys, ports)
 ├── package.json        # Project metadata & npm dependencies
 ├── package-lock.json   # Exact dependency version tree
