@@ -1,13 +1,13 @@
 # 👗 Velvet Thread
 
-A practice project exploring the concept of a digital virtual wardrobe using modern web development and AI-driven fashion recommendations.
+A practice project exploring the concept of a digital virtual wardrobe using modern web development and fashion recommendations.
 
 ---
 
 ## 🌟 Features
 
 * **Digital Closet Management:** Organize and manage your personal clothing items digitally.
-* **AI Recommendation Engine:** Get personalized outfit recommendations based on style, occasion, and preferences.
+* ** Recommendation Engine:** Get personalized outfit recommendations based on style, occasion, and preferences.
 * **Backend API Integration:** Node.js Express server to handle item management and user preferences.
 
 ---
@@ -27,7 +27,7 @@ Language: JavaScript (Node.js)
 
 Backend Framework: Express.js
 
-Topics & Focus: Artificial Intelligence, AI Fashion, Recommendation Systems
+Topics & Focus: Fashion Recommendation Systems
 
 🚀 Getting Started
 Prerequisites
